@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  /* 박스를 보더 포함한 값으로 나타냄 */
+  /* font-family: Gotham Rounded, sans-serif; */
+  font-weight: normal;
+  color: white;
+}
+
+body{
+  padding: 0;
+  margin:0;
+  /* background: linear-gradient(to right, #00AAFF, #00FF6C) */
+  background: black;
+}
+.output{
+  /* width:100px;
+  height: 20px; */
+  grid-column: 1/-1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 13px;
+  /* background: linear-gradient(to right, #00AAFF, #00FF6C); */
+
+  border-radius: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous-operand{
+  font-size: 1.5rem;
+  color:grey;
+  /* 색조절 */
+}
+.output .current-operand{
+  font-size: 2.5rem;
+
+}
+.calculator-grid{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  /* 화면을 100%다씀 */
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+
+  }
+
+.calculator-grid > button {
+  /* opacity:0.9; */
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: #333333;
+  border-radius: 100%;
+  margin:5px;
+}
+.calculator-grid > button:hover {
+  opacity: 0.9;
+}
+.calculator-grid > .first-row {
+  /* opacity:0.9; */
+  cursor: pointer;
+  color:black;
+  font-size: 2rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: #A5A5A5;
+  border-radius: 100%;
+  margin:5px;
+}
+.calculator-grid > .fourth-column {
+  /* opacity:0.9; */
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: #FEA00A;
+  border-radius: 100%;
+  margin:5px;
+}
+
+.calculator-grid > .fourth-column:active {
+  /* opacity:0.9; */
+  /* cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  outline: none;
+  background-color: #FEA00A;
+  border-radius: 100%;
+  margin:5px;
+  color:#FEA00A; */
+}
+#span-two{
+  grid-column: span 2;
+  border-radius: 50px;
+  text-indent: -100px;
+    }
