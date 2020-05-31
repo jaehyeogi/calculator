@@ -24,8 +24,8 @@ body{
   /* background: linear-gradient(to right, #00AAFF, #00FF6C); */
 
   border-radius: 15px;
-  word-wrap: break-word;
-  word-break: break-all;
+  /* word-wrap: break-word;
+  word-break: break-all; */
 }
 .output .previous-operand{
   font-size: 1.5rem;
@@ -38,8 +38,9 @@ body{
 }
 .calculator-grid{
   display: grid;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center;
+  align-content: center; */
+  place-content:center;
   min-height: 100vh;
   /* 화면을 100%다씀 */
   grid-template-columns: repeat(4, 100px);
@@ -62,24 +63,15 @@ body{
 }
 .calculator-grid > .first-row {
   /* opacity:0.9; */
-  cursor: pointer;
   color:black;
   font-size: 2rem;
-  border: 1px solid black;
-  outline: none;
   background-color: #A5A5A5;
   border-radius: 100%;
-  margin:5px;
 }
 .calculator-grid > .fourth-column {
   /* opacity:0.9; */
-  cursor: pointer;
   font-size: 2.5rem;
-  border: 1px solid black;
-  outline: none;
   background-color: #FEA00A;
-  border-radius: 100%;
-  margin:5px;
 }
 
 .calculator-grid > .fourth-column:active {
